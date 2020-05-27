@@ -1,0 +1,139 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!--
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding!
+
+- The freeCodeCamp Team
+
+-->
+<link rel="stylesheet" type="text/css" href="style.css">
+<h1 id="title">Survey Form!</h1>
+<p id="description"> Thank you for taking time to do our survey!</p>
+<form id="survey-form">
+  <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+
+  <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your email"
+        required
+      />
+    </div>
+  <div class="form-group">
+      <label id="number-label" for="number">Type your age</label>
+      <input
+        type="number"
+        name="number"
+        id="number"
+         min="0"
+             max="99"
+        class="form-control"
+        placeholder="Type your age"
+        required
+      />
+
+    </div>
+  <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+  </div>
+    <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="Purpose" class="form-control" required>
+        <option disabled selected value>Select current purpose</option>
+        <option value="full-time">Full-time</option>
+            <option value="part-time">Part-time</option>
+            <option value="contract">contract</option>
+  </select>
+
+  <div class="form-group">
+     <p>Choose your price range</p>
+      <label><input
+        type="radio"
+        name="salary"
+        class="input-radio"
+        value="<500"
+        checked
+        /> Below $500</label>
+     <label><input
+        type="radio"
+        name="salary"
+        class="input-radio"
+        value="500to1000"
+        /> $500 to $1000</label>
+     <label><input
+        type="radio"
+        name="salary"
+        class="input-radio"
+        value=">100"
+        /> Above $1000</label>
+  </div>
+
+  <div class="form-group">
+    <p>Choose what programs you hope to see.<span class="program">Select those which relate most</span></p>
+      <label><input
+        type="checkbox"
+        name="genre"
+        class="input-checkbox"
+        value="anime"
+
+        /> Anime</label>
+     <label><input
+        type="checkbox"
+        name="genre"
+        class="input-checkbox"
+        value="Mystery"
+
+        /> Mystery</label>
+    <label><input
+        type="checkbox"
+        name="genre"
+        class="input-checkbox"
+        value="Horror"
+        /> Horror</label>
+
+   <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+ <div class="form-group">
+      <p>Click here to submit</p>
+      <button
+        id="submit"
+        class="submit-button"
+        type="submit"
+
+      >Submit</button>
+    </div>
+
+
+</form>
